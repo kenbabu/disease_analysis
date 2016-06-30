@@ -4,7 +4,7 @@ import unittest
 browser = webdriver.Firefox()
 browser.get('http://localhost:8000')
 
-assert  'Django' in browser.title
+# assert  'Services' in browser.title
 
 class NewVisitorTest(unittest.TestCase):
     def setUp(self):
@@ -17,6 +17,8 @@ class NewVisitorTest(unittest.TestCase):
 
         self.assertIn('Services', self.browser.title)
         self.fail('Finish the test')
+
+
 if __name__ == '__main__':
     unittest.main(warnings='ignore')
 # Enter a disease or associated terms
